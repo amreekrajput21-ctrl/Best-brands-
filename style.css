@@ -1,87 +1,81 @@
-/* --- Premium Modern CSS --- */
-
-:root {
-    --primary-glow: #007bff;
-    --gold-glow: #d4af37;
-    --dark-bg: #0a0a0a;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--dark-bg);
-    background-image: 
-        radial-gradient(circle at 20% 30%, rgba(0, 123, 255, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.1) 0%, transparent 40%);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Screen se bahar kuch na jaye */
-    perspective: 1000px; /* 3D effect ke liye */
+  background: #111;
+  color: white;
 }
 
-/* Glass Card Style */
-.card {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 25px;
-    padding: 40px;
-    width: 320px;
-    text-align: center;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transform-style: preserve-3d;
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
 }
 
-/* Profile Image with Glow */
-.profile-img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    border: 2px solid var(--primary-glow);
-    padding: 5px;
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
-    object-fit: cover;
-    margin-bottom: 20px;
+.logo {
+  width: 80px;
 }
 
-/* Premium Typography */
-h2 {
-    font-size: 24px;
-    font-weight: 700;
-    background: linear-gradient(to right, #fff, #888);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 10px 0;
+/* Hero Section */
+.hero {
+  position: relative;
 }
 
-p {
-    color: #888;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+.hero img {
+  width: 100%;
 }
 
-/* Premium Button */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay h2 {
+  font-size: 30px;
+}
+
 .btn {
-    margin-top: 25px;
-    background: rgba(255, 255, 255, 0.05);
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 12px 30px;
-    border-radius: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-    backdrop-filter: blur(5px);
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.btn:hover {
-    background: var(--primary-glow);
-    box-shadow: 0 0 25px var(--primary-glow);
-    border-color: transparent;
-    transform: scale(1.05);
+/* Banner */
+.banner img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Products */
+.products {
+  padding: 20px;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  gap: 10px;
+}
+
+.grid img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
 }
