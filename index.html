@@ -1,95 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Profile UI</title>
-    <style>
-        /* CSS for the Premium Look */
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: radial-gradient(circle, #1a1a1a, #000); /* Dark Cinematic Background */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-        }
-
-        .card {
-            width: 350px;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.05); /* Transparent Glass Effect */
-            backdrop-filter: blur(15px); /* The "Glass" Blur */
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 0 30px rgba(0, 123, 255, 0.2); /* Soft Glow on Hover */
-        }
-
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid #007bff;
-            margin-bottom: 15px;
-            object-fit: cover;
-        }
-
-        h2 { margin: 10px 0 5px; letter-spacing: 1px; }
-        p { color: #aaa; font-size: 14px; margin-bottom: 20px; }
-
-        .btn {
-            padding: 12px 25px;
-            background: linear-gradient(45deg, #007bff, #00d4ff);
-            border: none;
-            border-radius: 30px;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            text-transform: uppercase;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            letter-spacing: 2px;
-            box-shadow: 0 0 15px #007bff;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Brands Ramban</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="card">
-        <img src="https://via.placeholder.com/120" alt="User Image" class="profile-img" id="avatar">
-        <h2 id="name">Ajay Katoch</h2>
-        <p>Full Stack Developer & Designer</p>
-        <button class="btn" onclick="toggleStyle()">Upgrade Look</button>
-    </div>
+<header>
+  <img src="images/logo.png" class="logo">
+  <h1>Best Brands</h1>
+</header>
 
-    <script>
-        // JavaScript for Interactive Logic
-        function toggleStyle() {
-            const card = document.querySelector('.card');
-            const btn = document.querySelector('.btn');
-            
-            // Adding a "Premium Gold" theme switch
-            if (btn.innerText === "UPGRADE LOOK") {
-                card.style.border = "1px solid rgba(255, 215, 0, 0.3)";
-                btn.style.background = "linear-gradient(45deg, #d4af37, #f9d423)";
-                btn.innerText = "Gold Member";
-                document.getElementById('avatar').style.borderColor = "#d4af37";
-            } else {
-                location.reload(); // Reset to default
-            }
-        }
-    </script>
+<section class="hero">
+  <img src="images/hero.jpg">
+  <div class="overlay">
+    <h2>Shop for Trending Outfits</h2>
+    <p>Best Brands Ramban</p>
+    <a href="tel:+919797475525" class="btn">Call Now</a>
+  </div>
+</section>
+
+<section class="banner">
+  <img src="images/banner.jpg">
+</section>
+
+<section class="products">
+  <h2>Our Collection</h2>
+  <div class="grid">
+    <img src="images/models.jpg">
+    <img src="images/product.jpg">
+  </div>
+</section>
+
+<footer>
+  <h3>Contact Us</h3>
+  <p>📞 +91 97974 75525</p>
+  <p>📍 Ramban</p>
+</footer>
 
 </body>
 </html>
