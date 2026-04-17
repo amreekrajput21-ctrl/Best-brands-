@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Brand</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h1>Best Brand</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="overlay">
+        <h2>Upgrade Your Style</h2>
+        <p>Premium Clothing & Footwear</p>
+        <button onclick="scrollToProducts()">Explore</button>
+    </div>
+</section>
+
+<section id="products" class="products">
+    <h2>Trending Collection</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="images/shoes.jpg">
+            <h3>Shoes</h3>
+            <button onclick="orderNow()">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="images/jeans.jpg">
+            <h3>Jeans</h3>
+            <button onclick="orderNow()">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="images/shirts.jpg">
+            <h3>Shirts</h3>
+            <button onclick="orderNow()">Order Now</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Visit Store</h2>
+    <p>📍 Ramban Bus Stand</p>
+    <p>📞 +91 97974 75525</p>
+    <a href="https://wa.me/919797475525">Chat on WhatsApp</a>
+</section>
+
+<footer>
+    <p>© Best Brand</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
