@@ -1,124 +1,87 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+/* --- Premium Modern CSS --- */
+
+:root {
+    --primary-glow: #007bff;
+    --gold-glow: #d4af37;
+    --dark-bg: #0a0a0a;
 }
 
 body {
-    background: #111;
-    color: white;
-}
-
-/* Navbar */
-header {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-bg);
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(0, 123, 255, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.1) 0%, transparent 40%);
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background: black;
-}
-
-header h1 {
-    color: red;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: red;
-}
-
-/* Hero */
-.hero {
-    height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-                url('images/banner.jpg') center/cover;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Screen se bahar kuch na jaye */
+    perspective: 1000px; /* 3D effect ke liye */
 }
 
-.hero h2 {
-    font-size: 40px;
-}
-
-.hero button {
-    margin-top: 20px;
-    padding: 10px 25px;
-    border: none;
-    background: red;
-    color: white;
-    cursor: pointer;
-}
-
-/* Products */
-.products {
-    padding: 50px;
-    text-align: center;
-}
-
-.product-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
+/* Glass Card Style */
 .card {
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 40px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+}
+
+/* Profile Image with Glow */
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-glow);
+    padding: 5px;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Premium Typography */
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(to right, #fff, #888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px 0;
+}
+
+p {
+    color: #888;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Premium Button */
+.btn {
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
     transition: 0.3s;
+    backdrop-filter: blur(5px);
 }
 
-.card:hover {
+.btn:hover {
+    background: var(--primary-glow);
+    box-shadow: 0 0 25px var(--primary-glow);
+    border-color: transparent;
     transform: scale(1.05);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.card button {
-    margin-top: 10px;
-    padding: 8px 15px;
-    background: red;
-    border: none;
-    color: white;
-}
-
-/* About */
-.about {
-    padding: 50px;
-    text-align: center;
-    background: #181818;
-}
-
-/* Contact */
-.contact {
-    padding: 50px;
-    text-align: center;
-}
-
-.whatsapp {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: green;
-    color: white;
-    text-decoration: none;
-}
-
-/* Footer */
-footer {
-    background: black;
-    text-align: center;
-    padding: 20px;
 }
