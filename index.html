@@ -1,104 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best Brands Ramban</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Brands Ramban</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
 
-    .header {
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-      background: #000;
-    }
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #000;
+}
 
-    .logo {
-      height: 50px;
-      margin-right: 10px;
-    }
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
 
-    .hero {
-      position: relative;
-    }
+/* HERO */
+.hero {
+  position: relative;
+}
 
-    .hero img {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-    }
+.hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
 
-    .overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-    .btn {
-      background: red;
-      padding: 10px 20px;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
+.btn {
+  background: red;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+}
 
-    .banner img {
-      width: 100%;
-    }
+/* BANNER */
+.banner img {
+  width: 100%;
+}
 
-    .products {
-      padding: 20px;
-      text-align: center;
-    }
+/* PRODUCTS */
+.products {
+  padding: 20px;
+  text-align: center;
+}
 
-    .product-grid {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-    }
+.product-grid {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
 
-    .product-grid img {
-      width: 150px;
-      border-radius: 10px;
-    }
+.product-grid img {
+  width: 150px;
+  border-radius: 10px;
+}
 
-    .contact {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-    }
+/* CONTACT */
+.contact {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+}
 
-    footer {
-      text-align: center;
-      padding: 10px;
-      background: #000;
-    }
-  </style>
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #000;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 14px;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+</style>
 
 </head>
 
 <body>
 
-<header class="header">
-  <img src="logo.JPG" class="logo">
+<header>
+  <img src="logo.jpg" class="logo">
   <h1>Best Brands</h1>
 </header>
 
 <section class="hero">
-  <img src="hero.JPG">
+  <img src="hero.jpg">
   <div class="overlay">
     <h2>Shop for Trending Outfits</h2>
     <p>Best Brands Ramban</p>
-    <a href="tel:+919797475525" class="btn">Call Now</a>
+
+    <a href="tel:+919797475525" class="btn">📞 Call</a>
+    <a href="https://wa.me/919797475525" target="_blank" class="btn">💬 WhatsApp</a>
+    <a href="https://instagram.com/bestbrands5525" target="_blank" class="btn">📸 Instagram</a>
+
   </div>
 </section>
 
@@ -109,8 +133,8 @@
 <section class="products">
   <h2>Our Collection</h2>
   <div class="product-grid">
-    <img src="models.JPG">
-    <img src="product.JPG">
+    <img src="models.jpg">
+    <img src="product.jpg">
   </div>
 </section>
 
@@ -123,6 +147,9 @@
 <footer>
   <p>© 2026 Best Brands Ramban</p>
 </footer>
+
+<!-- FLOAT BUTTON -->
+<a href="https://wa.me/919797475525" class="whatsapp-float" target="_blank">💬</a>
 
 </body>
 </html>
